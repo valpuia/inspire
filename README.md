@@ -3,6 +3,8 @@
 In a fresh Laravel Application, open `composer.json` file and include the following code
 
 ```
+// this is needed because this package don't use packagist
+
 "repositories": [
     {
         "type": "vcs",
@@ -20,10 +22,6 @@ composer require valpuia/inspire
 Edit `app.php` in `config` file and add below line in service provider
 
 ```
-/*
-* Package Service Providers...
-*/
-
 Valpuia\Inspire\Providers\InspirationProvider::class,
 ```
 
@@ -31,8 +29,10 @@ and you are ready to see some actions, head over to below url and be amaze!
 
 # Available URL
 
-`quote`
+`quotes`
 
-`random`
+`quotes/{id}` // 1,2,3 etc
+
+`quotes/random`
 
 Go to screen and check `http://localhost:8000/{url}`
