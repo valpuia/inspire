@@ -7,9 +7,16 @@ use Valpuia\Inspire\Inspire;
 
 class InspirationController
 {
-    public function quote(Inspire $inspire): View
+    public function index(Inspire $inspire): View
     {
-        $quote = $inspire->quote();
+        $quote = $inspire->quotes();
+
+        return view('inspire::index', compact('quote'));
+    }
+
+    public function show(Inspire $inspire, $id): View
+    {
+        $quote = $inspire->quote($id);
 
         return view('inspire::index', compact('quote'));
     }

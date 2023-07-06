@@ -6,9 +6,14 @@ use Illuminate\Support\Facades\Http;
 
 class Inspire
 {
-    public function quote()
+    public function quotes()
     {
-        $response = Http::get('https://dummyjson.com/quotes/1');
+        return Http::get('https://dummyjson.com/quotes');
+    }
+
+    public function quote($id)
+    {
+        $response = Http::get('https://dummyjson.com/quotes/'.$id);
 
         return $response['quote'].' -'.$response['author'];
     }
