@@ -1,6 +1,6 @@
 # How to Install
 
-Open `composer.json` file and include the following code
+In a fresh Laravel Application, open `composer.json` file and include the following code
 
 ```
 "repositories": [
@@ -11,17 +11,23 @@ Open `composer.json` file and include the following code
 ],
 ```
 
-Run below code from terminal
+And run below code from terminal to install
 
 ```
 composer require valpuia/inspire
 ```
 
-Edit `config.php` and add below line in Package service provider
+Edit `app.php` in `config` file and add below line in Package service provider
 
 ```
+/*
+* Package Service Providers...
+*/
+
 Valpuia\Inspire\Providers\InspirationProvider::class,
 ```
+
+and you are ready
 
 # Available URL
 
