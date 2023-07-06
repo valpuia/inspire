@@ -23,4 +23,10 @@ Edit `config.php` and add below line in Package service provider
 Valpuia\Inspire\Providers\InspirationProvider::class,
 ```
 
-Open URL and check `http://localhost:8000/quote`
+# Available URL
+
+`quote`
+
+`random`
+
+Go to screen and check `http://localhost:8000/{url}`

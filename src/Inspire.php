@@ -12,4 +12,11 @@ class Inspire
 
         return $response['quote'].' -'.$response['author'];
     }
+
+    public function random()
+    {
+        $response = Http::get('https://dummyjson.com/quotes/random');
+
+        return $response['quote'].' -'.$response['author'];
+    }
 }
