@@ -23,4 +23,4 @@ Edit `config.php` and add below line in Package service provider
 Valpuia\Inspire\Providers\InspirationProvider::class,
 ```
 
-Open URL and check {host}/quote
+Open URL and check `http://localhost:8000/quote`
