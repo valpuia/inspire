@@ -17,7 +17,7 @@ And run below code from terminal to install
 composer require valpuia/inspire
 ```
 
-Edit `app.php` in `config` file and add below line in Package service provider
+Edit `app.php` in `config` file and add below line in service provider
 
 ```
 /*
@@ -27,7 +27,7 @@ Edit `app.php` in `config` file and add below line in Package service provider
 Valpuia\Inspire\Providers\InspirationProvider::class,
 ```
 
-and you are ready
+and you are ready to see some actions, head over to below url and be amaze!
 
 # Available URL
 
