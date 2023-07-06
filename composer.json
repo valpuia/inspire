@@ -1,0 +1,18 @@
+{
+    "name": "valpuia/inspire",
+    "description": "Testing first package",
+    "autoload": {
+        "psr-4": {
+            "Valpuia\\Inspire\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Lalhmangaihenga",
+            "email": "valpuia604@gmail.com"
+        }
+    ],
+    "require": {
+        "guzzlehttp/guzzle": "^7.0.1"
+    }
+}
