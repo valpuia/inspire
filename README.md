@@ -1,6 +1,6 @@
 # How to Install
 
-In a fresh Laravel Application, open `composer.json` file and include the following code
+In a Laravel Application, open `composer.json` file and include the following code
 
 ```
 // this is needed because this package don't use packagist
